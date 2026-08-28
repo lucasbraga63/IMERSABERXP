@@ -1,0 +1,86 @@
+:root { 
+    --gradient-div-escura: rgb(0, 0, 0), rgba(1, 6, 19, 0.37), rgba(4, 14, 68, 0.37); 
+    --cor-texto-pequeno: #6c728f; 
+    --cor-texto-grande: #FFFFFF; 
+    --degrade-parte-textoGrande: #49B0C4, #579FC8, #7190D8; 
+} 
+ 
+.banner { 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    height: 800px; 
+} 
+ 
+.banner img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+} 
+ 
+.divEscura { 
+    background: linear-gradient(45deg, var(--gradient-div-escura)); 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    gap: 100px; 
+    flex-direction: column; 
+} 
+ 
+.conteudo { 
+    width: 45%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+.TextoGrande { 
+    width: 70%; 
+    text-align: left; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 50%; 
+    margin-left: 0; 
+} 
+ 
+.TextoGrande h2 { 
+    color: var(--cor-texto-grande); 
+    font-size: 80px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    text-align: left; 
+    margin: 0; 
+} 
+ 
+.TextoGrande span { 
+    background-image: linear-gradient(to right, var(--degrade-parte-textoGrande)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+} 
+ 
+.textoCurto { 
+    width: 70%; 
+    text-align: left; 
+    display: flex; 
+    margin-left: 0; 
+    height: 5%; 
+} 
+ 
+.textoCurto p { 
+    color: var(--cor-texto-pequeno); 
+    font-size: 12px; 
+    font-weight: bold; 
+} 
+ 
+.textoCurto #informacao { 
+    font-weight: 500; 
+}
